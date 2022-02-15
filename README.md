@@ -1,5 +1,5 @@
-to isntall the project -> npm i
-to run -> next dev
+#to install the project -> npm i
+#to run -> next dev
 
 # fullstack-candidate-testing
 
