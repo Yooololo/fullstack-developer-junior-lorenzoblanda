@@ -1,0 +1,9 @@
+@import "./Variables.module.scss";
+
+.Home {
+  background-color: $fondo;
+  width: 100%;
+  .theJobs {
+    display: flex;
+  }
+}

@@ -1,0 +1,166 @@
+@import "./Variables.module.scss";
+
+@media only screen and (min-width: 769px) {
+  .containerTodo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .todo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+  }
+
+  .Filters {
+    margin-right: 1rem;
+    .filtersordena {
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .filterseachfilter {
+      border: 2px solid $bordecomponente;
+      background-color: $fondocomponente;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    .filtersreset {
+      border: 2px solid $bordecomponente;
+      background-color: $fondocomponente;
+      width: fit-content;
+      align-self: center;
+      background-color: $fondocomponente;
+      border: 2px solid $azulcin;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      margin: 1rem 1rem;
+      margin-top: 0;
+    }
+
+    .filtersreset:hover {
+      background-color: $azulcin;
+      border: 2px solid $fondocomponente;
+      cursor: pointer;
+    }
+
+    .filtersfilter {
+      font-weight: bold;
+      margin: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .filtersoption {
+      background-color: $fondocomponente;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .filtersoption:hover {
+      cursor: pointer;
+    }
+
+    .eachBreakdown {
+      display: flex;
+      flex-direction: row;
+      margin: 0.75rem 0.25rem;
+      align-items: center;
+    }
+
+    .eachBreakdownModal {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      z-index: 100;
+      top: 25vh;
+      left: 15vw;
+      width: 70vw;
+      height: 50vh;
+      background-color: $fondocomponente;
+      border: 2px solid $bordecomponente;
+      box-shadow: 100vh 100vh 100vw 100vw rgba(0, 0, 0, 0.15);
+      border-radius: 0.5rem;
+    }
+
+    .TitleModal {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid $bordecomponente;
+      align-items: center;
+    }
+
+    .filtersfilterModal {
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    .buttonModal {
+      background-color: $fondocomponente;
+      border: none;
+      margin-right: 1rem;
+    }
+
+    .buttonModal:hover {
+      cursor: pointer;
+    }
+
+    .eachDepartmentModal {
+      display: grid;
+      z-index: 100;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 1rem;
+    }
+
+    .specModal {
+      display: flex;
+      flex-direction: row;
+      margin: 0.5rem 0;
+      align-items: center;
+    }
+
+    .eachCount {
+      color: $iconos;
+      font-size: 0.75rem;
+    }
+
+    .showMore {
+      background-color: $fondocomponente;
+      color: $showmore;
+      border: none;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .showMore:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .containerTodo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .todo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Filters {
+    display: none;
+    .filtersordena {
+      display: none;
+    }
+  }
+}

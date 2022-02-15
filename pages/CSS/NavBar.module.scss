@@ -1,0 +1,243 @@
+@import "./Variables.module.scss";
+
+@media only screen and (min-width: 769px) {
+  .NavBar {
+    position: sticky;
+    z-index: 10000;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $fondocomponente;
+    margin-bottom: 2vh;
+    justify-content: space-around;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+    }
+
+    .dropdownMenu {
+      display: none;
+    }
+
+    .eachDiv {
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .eachDiv:hover {
+      cursor: pointer;
+    }
+
+    .easterEgg {
+      position: absolute;
+      top: 10vh;
+      background-color: transparent;
+      border: none;
+    }
+
+    .easterEgg:hover {
+      cursor: pointer;
+    }
+
+    .easterEgg2 {
+      position: absolute;
+      top: 15vh;
+      background-color: transparent;
+      border: none;
+    }
+
+    .easterEgg2:hover {
+      cursor: pointer;
+    }
+
+    .divHeEx {
+      color: $azulcin;
+    }
+
+    .middledivs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .rightdivs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .buttonCreate {
+      background-color: $fondocomponente;
+      color: $azulcin;
+      border: 2px solid $azulcin;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+    }
+
+    .buttonCreate:hover {
+      background-color: $azulcin;
+      color: $fondocomponente;
+      cursor: pointer;
+    }
+
+    .buttonProfile {
+      background-color: $azulcin;
+      color: $fondocomponente;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 50%;
+      padding: 0.3rem;
+      border: 1px solid $azulcin;
+      font-size: 1.25rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .buttonProfile:hover {
+      background-color: $fondocomponente;
+      color: $azulcin;
+      border: 1px solid $fondo;
+      cursor: pointer;
+    }
+
+    .divBP {
+      position: relative;
+      display: inline-block;
+    }
+
+    .divBP .notification {
+      background-color: red;
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 50%;
+      color: white;
+      font-size: 0.75rem;
+      border: 3px solid white;
+    }
+
+    .divLog {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .NavBar {
+    position: sticky;
+    z-index: 10000;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $fondocomponente;
+    justify-content: space-around;
+
+    .nav {
+      display: grid;
+      grid-template-columns: 5% 80% 5%;
+      list-style: none;
+      justify-content: flex-start;
+      width: 90%;
+      align-items: center;
+    }
+
+    .dropdownMenu {
+      display: flex;
+      font-size: 2rem;
+      color: $iconos;
+    }
+
+    .eachDiv {
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .eachDiv:hover {
+      cursor: pointer;
+    }
+
+    .divHeEx {
+      color: $azulcin;
+    }
+
+    .middledivs {
+      display: none;
+    }
+
+    .rightdivs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .buttonCreate {
+      display: none;
+    }
+
+    .buttonProfile {
+      background-color: $azulcin;
+      color: $fondocomponente;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 50%;
+      padding: 0.3rem;
+      border: 1px solid $azulcin;
+      font-size: 1.25rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .buttonProfile:hover {
+      background-color: $fondocomponente;
+      color: $azulcin;
+      border: 1px solid $fondo;
+      cursor: pointer;
+    }
+
+    .divBP {
+      position: relative;
+      display: inline-block;
+    }
+
+    .divBP .notification {
+      background-color: red;
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 50%;
+      color: white;
+      font-size: 0.75rem;
+      border: 3px solid white;
+    }
+
+    .divLog {
+      display: none;
+    }
+  }
+}

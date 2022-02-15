@@ -1,0 +1,72 @@
+@import "./Variables.module.scss";
+
+@media only screen and (min-width: 769px) {
+  .Footer {
+    width: 100%;
+    height: min-content;
+    background-color: $fondocomponente;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2vh;
+    position: sticky;
+    font-size: 0.85rem;
+
+    .h3 {
+      color: $font;
+      margin: 1rem 0;
+    }
+
+    .eachItemAbout {
+      margin: 0.5rem;
+      margin-left: 0;
+    }
+
+    .eachItem {
+      margin: 0.5rem;
+      margin-left: 0;
+    }
+
+    .eachItem:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Footer {
+    width: 90%;
+    height: min-content;
+    background-color: $fondocomponente;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 2rem;
+    position: sticky;
+    font-size: 0.85rem;
+
+    .h3 {
+      color: $font;
+      margin: 1rem 0;
+    }
+
+    .eachItemAbout {
+      margin: 0.5rem;
+      margin-left: 0;
+    }
+
+    .eachItemAbout + .eachItemAbout {
+      margin-top: 1rem;
+    }
+
+    .eachItem {
+      margin: 0.5rem;
+      margin-left: 0;
+    }
+
+    .eachItem:hover {
+      cursor: pointer;
+    }
+  }
+}

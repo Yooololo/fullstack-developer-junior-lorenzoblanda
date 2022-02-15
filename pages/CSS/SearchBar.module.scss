@@ -1,0 +1,90 @@
+@import "./Variables.module.scss";
+
+@media only screen and (min-width: 769px) {
+  .SearchBar {
+    position: sticky;
+    height: 7vh;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $fondocomponente;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $bordecomponente;
+    margin-bottom: 1rem;
+
+    .buttonSearchBar {
+      background-color: $fondocomponente;
+      border: 2px solid $azulcin;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .buttonSearchBar:hover {
+      background-color: $azulcin;
+      border: 2px solid $fondocomponente;
+      cursor: pointer;
+    }
+
+    .inputSearchBar {
+      width: 100%;
+      border: none;
+    }
+
+    .inputSearchBar:focus {
+      outline: none;
+    }
+
+    .inputSearchBar::placeholder {
+      color: $iconos;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .SearchBar {
+    position: sticky;
+    height: 7vh;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $fondocomponente;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $bordecomponente;
+
+    .buttonSearchBar {
+      background-color: $fondocomponente;
+      border: 2px solid $azulcin;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      margin: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .buttonSearchBar:hover {
+      background-color: $azulcin;
+      border: 2px solid $fondocomponente;
+      cursor: pointer;
+    }
+
+    .inputSearchBar {
+      width: 100%;
+      border: none;
+    }
+
+    .inputSearchBar:focus {
+      outline: none;
+    }
+
+    .inputSearchBar::placeholder {
+      color: $iconos;
+    }
+  }
+}

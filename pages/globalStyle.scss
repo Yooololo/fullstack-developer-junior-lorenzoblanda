@@ -1,0 +1,31 @@
+@import "./CSS/Variables.module.scss";
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-size: 0.85rem;
+  font-family: Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem; /* width of the entire scrollbar */
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: repeating-linear-gradient(
+    $fondocomponente,
+    $fondocomponente 10vh,
+    $fondo 10.1vh,
+    $fondo 100vh
+  );
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $iconos; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid white; /* creates padding around scroll thumb */
+}

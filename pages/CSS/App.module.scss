@@ -1,0 +1,66 @@
+@import "./Variables.module.scss";
+
+@media only screen and (min-width: 769px) {
+  .App {
+    background-color: $fondo;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    width: 100vw;
+
+    .Main {
+      margin: 1rem;
+    }
+
+    .backtotop {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 10000;
+      background-color: $azulcin;
+      border: 2px solid $fondo;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .backtotop:hover {
+      background-color: $fondo;
+      border: 2px solid $azulcin;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    background-color: $fondo;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+
+    .backtotop {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 10000;
+      background-color: $azulcin;
+      border: 2px solid $fondo;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 0.25rem 0.75rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    .backtotop:hover {
+      background-color: $fondo;
+      border: 2px solid $azulcin;
+      cursor: pointer;
+    }
+  }
+}

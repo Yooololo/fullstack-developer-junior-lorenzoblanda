@@ -1,0 +1,484 @@
+@import "./Variables.module.scss";
+
+@media only screen and (min-width: 769px) {
+  .Jobs {
+    background-color: $fondocomponente;
+    border: 2px solid $bordecomponente;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+
+    .jobSum {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .theJobSum {
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+
+    .losselectores {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-right: 0.5vw;
+      height: min-content;
+      border-radius: 0.5rem;
+      background-color: $fondo;
+      border: 1px solid $iconos;
+      height: 4vh;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .losselectores:focus {
+      outline: none;
+    }
+
+    .losselectores:hover {
+      cursor: pointer;
+    }
+
+    .JobSorting {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2rem 0.5rem;
+    }
+
+    .jobSort {
+      display: flex;
+      flex-direction: row;
+      color: $iconos;
+    }
+
+    .buttonSort {
+      background-color: $fondocomponente;
+      border: none;
+      font-weight: bold;
+    }
+
+    .buttonSort:hover {
+      cursor: pointer;
+    }
+
+    .buttonSortactive {
+      color: $azulcin;
+      background-color: $fondocomponente;
+      border: none;
+      font-weight: bold;
+    }
+
+    .buttonSortactive:hover {
+      cursor: pointer;
+    }
+
+    .eachSort {
+      margin: 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .everyLineJob {
+      display: grid;
+      grid-template-columns: 5% 45% 10%;
+      width: 95%;
+      align-items: center;
+      justify-content: flex-start;
+      justify-items: flex-start;
+    }
+
+    .allTheJobs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 2rem;
+    }
+
+    .dosLetras {
+      font-size: 1rem;
+      background-color: $iconos;
+      border: 1px solid $iconos;
+      border-radius: 0.5rem;
+      color: $fondocomponente;
+      width: 1.5rem;
+      height: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-right: 1rem;
+    }
+
+    //.dosLetras.selected {}
+    .dosLetras:hover {
+      border: 1px solid $azulcin;
+    }
+
+    .eachJobButton {
+      margin-left: 1rem;
+      background-color: $showmore;
+      border: 1px solid $iconos;
+      border-radius: 0.5rem;
+      color: $fondocomponente;
+      width: fit-content;
+      padding: 0.5rem;
+    }
+
+    .eachJobButton:hover {
+      cursor: pointer;
+    }
+
+    .jobDesc {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: max-content;
+    }
+
+    .jobTitle {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .subJobs {
+      margin: 0.5rem 5%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .eachSubJob {
+      display: flex;
+      position: relative;
+      left: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .eachItem {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+      justify-content: space-between;
+      border-top: 1px solid $bordecomponente;
+      border-bottom: 1px solid $bordecomponente;
+      border-left: none;
+      border-right: none;
+      background-color: $fondocomponente;
+      padding: 0.5rem 0;
+      align-items: center;
+    }
+
+    .eachItem:hover {
+      cursor: pointer;
+    }
+
+    .weeks {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .eachSubJobTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .eachSubJobTitleSpecific {
+      font-weight: bold;
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+    }
+
+    .allTheSubSub {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .SubSub {
+      display: grid;
+      width: 90%;
+      grid-template-columns: 50% 50%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .SubSubTitle {
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+
+    .SubSubDetail {
+      margin: 0.5rem 0;
+    }
+
+    .SubSubButtons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .SubSubButton1 {
+      background-color: $azulcin;
+      color: $fondocomponente;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid $azulcin;
+      min-width: max-content;
+      max-height: min-content;
+      margin: 0.5rem 0;
+    }
+
+    .SubSubButton1:hover {
+      cursor: pointer;
+    }
+
+    .SubSubButton2 {
+      background-color: $fondocomponente;
+      color: $azulcin;
+      border: 1px solid $azulcin;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      min-width: max-content;
+      max-height: min-content;
+    }
+
+    .SubSubButton2:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Jobs {
+    background-color: $fondocomponente;
+    border: 2px solid $bordecomponente;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    width: 100%;
+
+    .jobSum {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .theJobSum {
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+
+    .losselectores {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-right: 0.5vw;
+      height: min-content;
+      border-radius: 0.5rem;
+      background-color: $fondo;
+      border: 1px solid $iconos;
+      height: 4vh;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .losselectores:focus {
+      outline: none;
+    }
+
+    .losselectores:hover {
+      cursor: pointer;
+    }
+
+    .JobSorting {
+      display: none;
+    }
+
+    .everyLineJob {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+      width: 90%;
+      align-items: center;
+      justify-content: flex-start;
+      justify-items: flex-start;
+    }
+
+    .allTheJobs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .dosLetras {
+      font-size: 1rem;
+      background-color: $iconos;
+      border: 1px solid $iconos;
+      border-radius: 0.5rem;
+      color: $fondocomponente;
+      width: 1.5rem;
+      height: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-right: 1rem;
+    }
+
+    //.dosLetras.selected {}
+    .dosLetras:hover {
+      border: 1px solid $azulcin;
+    }
+
+    .eachJobButton {
+      margin-left: 1rem;
+      background-color: $showmore;
+      border: 1px solid $iconos;
+      border-radius: 0.5rem;
+      color: $fondocomponente;
+      width: min-content;
+      height: max-content;
+    }
+
+    .eachJobButton:hover {
+      cursor: pointer;
+    }
+
+    .jobDesc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .jobTitle {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .subJobs {
+      margin: 0.5rem 5%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .eachSubJob {
+      display: flex;
+      position: relative;
+      left: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .eachItem {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 60% 20% 20%;
+      justify-content: space-between;
+      border-top: 1px solid $bordecomponente;
+      border-bottom: 1px solid $bordecomponente;
+      border-left: none;
+      border-right: none;
+      background-color: $fondocomponente;
+      padding: 0.5rem 0;
+      align-items: center;
+    }
+
+    .eachItem:hover {
+      cursor: pointer;
+    }
+
+    .weeks {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .eachSubJobTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .eachSubJobTitleSpecific {
+      font-weight: bold;
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+    }
+
+    .allTheSubSub {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .SubSub {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .SubSubTitle {
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+
+    .SubSubDetail {
+      margin: 0.5rem 0;
+    }
+
+    .SubSubButtons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .SubSubButton1 {
+      background-color: $azulcin;
+      color: $fondocomponente;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid $azulcin;
+      min-width: max-content;
+      max-height: min-content;
+      margin: 0.5rem 1rem;
+      margin-left: 0;
+    }
+
+    .SubSubButton1:hover {
+      cursor: pointer;
+    }
+
+    .SubSubButton2 {
+      background-color: $fondocomponente;
+      color: $azulcin;
+      border: 1px solid $azulcin;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      min-width: max-content;
+      max-height: min-content;
+    }
+
+    .SubSubButton2:hover {
+      cursor: pointer;
+    }
+  }
+}
